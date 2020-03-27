@@ -15,6 +15,6 @@ RandomGraphToken contract address :  `0x58A21f7aA3D9D83D0BD8D4aDF589626D13b94b45
 
 SimpleExchange contract address : `0xA46E01606f9252fa833131648f4D855549BcE9D9`
 
-Live Demo : `https://vigorous-ptolemy-6e353c.netlify.com/`
+Live Demo : `https://non-fungible-token.netlify.com/`
 
 Use metamask to connect with the app. Set RPC to matic testnet.
