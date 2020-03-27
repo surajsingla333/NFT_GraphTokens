@@ -1,3 +1,4 @@
+const HDWalletProvider = require('truffle-hdwallet-provider');
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -47,6 +48,15 @@ module.exports = {
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
      },
+
+    matic: {
+      provider: function() {
+        return new HDWalletProvider("gesture rather obey video awake genuine patient base soon parrot upset lounge", 'https://testnetv3.matic.network', 0,1)
+      },
+      network_id: 15001,
+      gas: 8000000,
+      gasPrice: 0,
+    },
 
     // Another network with more advanced options...
     // advanced: {
