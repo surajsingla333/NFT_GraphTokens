@@ -1,4 +1,6 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
+const mnemonic = require('./constants')
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -49,14 +51,22 @@ module.exports = {
       network_id: "*",       // Any network (default: none)
      },
 
+    // matic: {
+    //   provider: function() {
+    //     return new HDWalletProvider("gesture rather obey video awake genuine patient base soon parrot upset lounge", 'https://testnetv3.matic.network', 0,1)
+    //   },
+    //   network_id: 15001,
+    //   gas: 8000000,
+    //   gasPrice: 0,
+    // },
+
     matic: {
-      provider: function() {
-        return new HDWalletProvider("gesture rather obey video awake genuine patient base soon parrot upset lounge", 'https://testnetv3.matic.network', 0,1)
+        provider: () => new HDWalletProvider(mnemonic.MNEMONIC, `https://rpc-mumbai.matic.today`),
+        network_id: 80001,
+        confirmations: 2,
+        timeoutBlocks: 200,
+        skipDryRun: true
       },
-      network_id: 15001,
-      gas: 8000000,
-      gasPrice: 0,
-    },
 
     // Another network with more advanced options...
     // advanced: {

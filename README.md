@@ -9,11 +9,11 @@ Buy/selling means changing the ownership of the tokens.
 
 I have used matic protocol to make transaction much faster and gas efficient (0 in function calls). You will need to change the gas price to 0 to make the transactions free of gas.
 
-## Contract Deployed on matic testnet :  `https://testnetv3.matic.network`
+## Contract Deployed on matic testnet :  `https://rpc-mumbai.matic.today`
 
-RandomGraphToken contract address :  `0x58A21f7aA3D9D83D0BD8D4aDF589626D13b94b45`
+RandomGraphToken contract address :  `0xdb5BDcbA7f095d52De4A8fa60ed3946BDc3803Ce`
 
-SimpleExchange contract address : `0xA46E01606f9252fa833131648f4D855549BcE9D9`
+SimpleExchange contract address : `0xB51D11DB3A42668E3bb237477AcD7810C8e9DFb3`
 
 Live Demo : `https://non-fungible-token.netlify.com/`
 
