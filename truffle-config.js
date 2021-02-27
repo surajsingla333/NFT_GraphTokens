@@ -51,15 +51,6 @@ module.exports = {
       network_id: "*",       // Any network (default: none)
      },
 
-    // matic: {
-    //   provider: function() {
-    //     return new HDWalletProvider("gesture rather obey video awake genuine patient base soon parrot upset lounge", 'https://testnetv3.matic.network', 0,1)
-    //   },
-    //   network_id: 15001,
-    //   gas: 8000000,
-    //   gasPrice: 0,
-    // },
-
     matic: {
         provider: () => new HDWalletProvider(mnemonic.MNEMONIC, `https://rpc-mumbai.matic.today`),
         network_id: 80001,
